@@ -11,7 +11,7 @@
   --line:#e7e7e7;
   --header-h:76px;
   --header-h-mobile:49px;
-  --serif:'Libre Baskerville', 'Noto Serif KR', serif;
+  --serif:'Cormorant Garamond', 'Noto Serif KR', serif;
   --sans:'Pretendard','Noto Sans KR','Malgun Gothic',-apple-system,sans-serif;
   --script:'Caveat', cursive;
   --max:1680px;
@@ -74,8 +74,9 @@ header.site-header .header-inner{
 }
 .logo{
   font-family:var(--serif);
-  font-size:24px;
-  letter-spacing:0.04em;
+  font-weight:600;
+  font-size:26px;
+  letter-spacing:0.06em;
   color:#fff;
   transition:color .3s ease;
 }
@@ -220,8 +221,8 @@ footer .footer-info p{
 /* generic section title */
 .page-title{
   font-family:var(--serif);
-  font-weight:400;
-  font-size:34px;
+  font-weight:500;
+  font-size:36px;
   text-align:center;
   padding:70px 0 40px;
 }
