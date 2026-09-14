@@ -26,7 +26,7 @@ html{
 body{
   font-family:var(--sans);
   color:var(--ink);
-  background:var(--bg);
+
   line-height:1.7;
   font-weight:300;
   -webkit-font-smoothing:antialiased;
