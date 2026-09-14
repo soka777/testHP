@@ -22,19 +22,20 @@
     display:flex;
     gap:40px;
     border-top:1px solid var(--line);
-    padding:26px 0;
+    padding:34px 0;
   }
   .category-group:last-of-type{ border-bottom:1px solid var(--line); }
   .category-label{
     flex:0 0 100px;
+    font-family:var(--sans);
     font-size:15px;
     color:var(--ink);
-    padding-top:4px;
+    padding-top:2px;
   }
   .category-items{ flex:1; }
 
   .item-row{
-    padding:14px 0;
+    padding:22px 0;
     border-top:1px solid var(--line);
   }
   .item-row:first-child{ border-top:none; padding-top:0; }
@@ -45,19 +46,23 @@
     gap:20px;
   }
   .item-name{
-    font-family:var(--serif);
-    font-size:18px;
+    font-family:var(--sans);
+    font-weight:500;
+    font-size:17px;
+    color:var(--ink);
   }
   .item-price{
+    font-family:var(--sans);
     font-size:15px;
     white-space:nowrap;
     color:var(--ink);
   }
   .item-desc{
+    font-family:var(--sans);
     font-size:13.5px;
     color:var(--ink-soft);
-    margin-top:8px;
-    line-height:1.7;
+    margin-top:10px;
+    line-height:1.8;
   }
 
   @media (max-width:640px){
@@ -80,21 +85,23 @@
     border-bottom:1px solid var(--ink);
     margin:90px 0 36px;
   }
-  .notice-item{ margin-bottom:30px; }
+  .notice-item{ margin-bottom:34px; }
   .notice-item:last-child{ margin-bottom:0; }
   .notice-item .main{
+    font-family:var(--sans);
     font-size:15px;
     color:var(--ink);
-    line-height:1.7;
+    line-height:1.8;
   }
   .notice-item .main::before{
     content:"· ";
   }
   .notice-item .sub{
+    font-family:var(--sans);
     font-size:13px;
     color:var(--ink-soft);
-    margin-top:6px;
-    line-height:1.7;
+    margin-top:8px;
+    line-height:1.8;
   }
 </style>
 </head>
