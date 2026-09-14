@@ -9,23 +9,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <style>
-  .film-tabs{
-    display:flex;
-    justify-content:center;
-    gap:26px;
-    margin-bottom:60px;
-  }
-  .film-tab{
-    font-size:14px;
-    color:var(--ink-soft);
-    padding-bottom:4px;
-    border-bottom:1px solid transparent;
-  }
-  .film-tab.active{
-    color:var(--ink);
-    border-color:var(--ink);
-  }
-
   .film-category{ margin-bottom:90px; }
   .film-category h2{
     font-family:var(--serif);
@@ -76,15 +59,7 @@
     <nav class="main-nav">
       <ul>
         <li><a href="about.html">About</a></li>
-        <li class="dropdown current">
-          <a href="films.html">Films</a>
-          <ul class="dropdown-menu">
-            <li><a href="films.html?cat=all">All</a></li>
-            <li><a href="films.html?cat=wedding">wedding</a></li>
-            <li><a href="films.html?cat=pre-wedding">pre-wedding</a></li>
-            <li><a href="films.html?cat=baby">baby</a></li>
-          </ul>
-        </li>
+        <li class="current"><a href="films.html">Films</a></li>
         <li><a href="product.html">Product</a></li>
         <li><a href="reservation.html">Reservation</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -105,15 +80,7 @@
   <button class="close-btn" id="mobileMenuClose" aria-label="닫기">&times;</button>
   <ul>
     <li><a href="about.html">About</a></li>
-    <li>
-      <a href="films.html">Films</a>
-      <ul>
-        <li><a href="films.html?cat=all">All</a></li>
-        <li><a href="films.html?cat=wedding">wedding</a></li>
-        <li><a href="films.html?cat=pre-wedding">pre-wedding</a></li>
-        <li><a href="films.html?cat=baby">baby</a></li>
-      </ul>
-    </li>
+    <li><a href="films.html">Films</a></li>
     <li><a href="product.html">Product</a></li>
     <li><a href="reservation.html">Reservation</a></li>
     <li><a href="contact.html">Contact</a></li>
@@ -124,13 +91,6 @@
 
 <main class="wrap" style="padding-bottom:100px;">
   <h1 class="page-title">Films</h1>
-
-  <div class="film-tabs">
-    <a href="#" class="film-tab active" data-target="all">All</a>
-    <a href="#" class="film-tab" data-target="wedding">wedding</a>
-    <a href="#" class="film-tab" data-target="pre-wedding">pre-wedding</a>
-    <a href="#" class="film-tab" data-target="baby">baby</a>
-  </div>
 
   <!-- Wedding -->
   <section class="film-category" data-category="wedding">
@@ -163,38 +123,6 @@
     </div>
     <a href="#" class="more-view">More view</a>
   </section>
-
-  <!-- Pre-wedding -->
-  <section class="film-category" data-category="pre-wedding">
-    <h2>pre-wedding</h2>
-    <div class="film-grid">
-      <div class="film-item">
-        <div class="ph"></div>
-        <p class="caption"></p>
-      </div>
-      <div class="film-item">
-        <div class="ph"></div>
-        <p class="caption"></p>
-      </div>
-    </div>
-    <a href="#" class="more-view">More view</a>
-  </section>
-
-  <!-- Baby -->
-  <section class="film-category" data-category="baby">
-    <h2>baby</h2>
-    <div class="film-grid">
-      <div class="film-item">
-        <div class="ph"></div>
-        <p class="caption"></p>
-      </div>
-      <div class="film-item">
-        <div class="ph"></div>
-        <p class="caption"></p>
-      </div>
-    </div>
-    <a href="#" class="more-view">More view</a>
-  </section>
 </main>
 
 <footer>
@@ -215,16 +143,5 @@
 </footer>
 
 <script src="script.js"></script>
-<script>
-  // URL의 ?cat= 파라미터로 들어온 경우 해당 탭을 자동 선택
-  (function(){
-    var params = new URLSearchParams(window.location.search);
-    var cat = params.get('cat');
-    if(cat){
-      var tab = document.querySelector('.film-tab[data-target="'+cat+'"]');
-      if(tab) tab.click();
-    }
-  })();
-</script>
 </body>
 </html>

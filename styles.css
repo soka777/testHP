@@ -3,12 +3,12 @@
    여기 :root 값만 바꾸면 사이트 전체 색/간격이 바뀝니다.
    ========================================================= */
 :root{
-  --ink:#232323;
-  --ink-soft:rgba(35,35,35,0.65);
-  --ink-faint:rgba(35,35,35,0.45);
-  --brand:#c17a3f;           /* 포인트 컬러: 따뜻한 앰버 (기존의 무채색 블랙그레이 대신) */
-  --bg:#fbf9f6;
-  --line:#e9e3da;
+  --ink:#212121;
+  --ink-soft:rgba(33,33,33,0.65);
+  --ink-faint:rgba(33,33,33,0.45);
+  --brand:#363636;           /* 포인트 컬러: 블랙에 가까운 다크그레이 */
+  --bg:#fdfcf9;
+  --line:#e7e7e7;
   --header-h:76px;
   --header-h-mobile:49px;
   --serif:'Libre Baskerville', 'Noto Serif KR', serif;
