@@ -37,19 +37,11 @@ ul{ list-style:none; }
   padding:0 32px;
 }
 
-/* placeholder photo blocks — 실제 사진으로 교체할 부분 */
+/* placeholder photo blocks — 실제 사진으로 교체할 부분 (지금은 테두리만 있는 빈 박스) */
 .ph{
-  background:linear-gradient(150deg,#e9e4da,#cfc7b7 55%,#b9ab93 140%);
-  position:relative;
-}
-.ph::after{
-  content:attr(data-label);
-  position:absolute; inset:0;
-  display:flex; align-items:center; justify-content:center;
-  font-family:var(--sans);
-  font-size:12px;
-  letter-spacing:0.08em;
-  color:rgba(33,33,33,0.35);
+  background:transparent;
+  border:1px solid var(--ink);
+  box-sizing:border-box;
 }
 /* 실제 사진(img 태그)이 들어간 경우: 꽉 채워서 표시 */
 img.ph{
@@ -58,7 +50,6 @@ img.ph{
   object-fit:cover;
   display:block;
 }
-img.ph::after{ content:none; }
 
 /* ===================== Header ===================== */
 header.site-header{
