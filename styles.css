@@ -3,17 +3,17 @@
    여기 :root 값만 바꾸면 사이트 전체 색/간격이 바뀝니다.
    ========================================================= */
 :root{
-  --ink:#212121;
-  --ink-soft:rgba(33,33,33,0.65);
-  --ink-faint:rgba(33,33,33,0.45);
-  --brand:#363636;
-  --bg:#fdfcf9;
-  --line:#e7e7e7;
+  --ink:#232323;
+  --ink-soft:rgba(35,35,35,0.65);
+  --ink-faint:rgba(35,35,35,0.45);
+  --brand:#c17a3f;           /* 포인트 컬러: 따뜻한 앰버 (기존의 무채색 블랙그레이 대신) */
+  --bg:#fbf9f6;
+  --line:#e9e3da;
   --header-h:76px;
   --header-h-mobile:49px;
-  --serif:'Libre Baskerville', 'Noto Serif KR', serif;
-  --sans:'Pretendard','Malgun Gothic',-apple-system,sans-serif;
-  --script:'Caveat', cursive;
+  --serif:'Noto Sans KR','Pretendard','Malgun Gothic',-apple-system,sans-serif; /* 세리프 대신 고딕 */
+  --sans:'Noto Sans KR','Pretendard','Malgun Gothic',-apple-system,sans-serif;
+  --script:'Noto Sans KR','Pretendard',sans-serif; /* 손글씨체 대신 고딕 이탤릭으로 대체 */
   --max:1680px;
 }
 
@@ -70,9 +70,10 @@ header.site-header .header-inner{
   padding:0 32px;
 }
 .logo{
-  font-family:var(--serif);
-  font-size:24px;
-  letter-spacing:0.04em;
+  font-family:var(--sans);
+  font-weight:700;
+  font-size:21px;
+  letter-spacing:0.06em;
   color:#fff;
   transition:color .3s ease;
 }

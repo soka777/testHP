@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>바텀드로어</title>
-<meta name="description" content="바텀드로어 공식 홈페이지 | 본식영상, 웨딩영상, 프리웨딩 영상을 제작합니다. 다시 꺼내보고 싶은 순간을 기록합니다.">
+<title>NEWDAY FILM</title>
+<meta name="description" content="NEWDAY FILM 공식 홈페이지 | 본식영상, 웨딩영상, 프리웨딩 영상을 제작합니다. 다시 꺼내보고 싶은 순간을 기록합니다.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <style>
   /* ---- 이 페이지(홈)에서만 쓰는 스타일 ---- */
@@ -86,7 +86,7 @@
 <!-- Desktop Header -->
 <header class="site-header" id="site-header">
   <div class="header-inner">
-    <a class="logo" href="index.html">BOTTOM DRAWER</a>
+    <a class="logo" href="index.html">NEWDAY FILM</a>
     <nav class="main-nav">
       <ul>
         <li><a href="about.html">About</a></li>
@@ -110,7 +110,7 @@
 <!-- Mobile Header -->
 <header class="site-header-mobile overlay" id="site-header-mobile">
   <div class="header-inner">
-    <a class="logo" href="index.html">BOTTOM DRAWER</a>
+    <a class="logo" href="index.html">NEWDAY FILM</a>
     <button class="menu-btn" id="mobileMenuBtn" aria-label="메뉴 열기">&#9776;</button>
   </div>
 </header>
@@ -135,32 +135,46 @@
   </ul>
 </div>
 
-<!-- Hero: 배경 영상 자동재생 (음소거 + 무한반복)
-     다른 영상으로 바꾸려면: 아래 유튜브 영상 ID(0bSrmctpkYM)를
-     원하는 영상 ID로 두 군데(embed/ 뒤, playlist= 뒤) 모두 교체하세요. -->
+<!-- Hero: 영상 자리 (지금은 자리표시자 그라데이션)
+     본인 영상으로 채우는 방법은 아래 주석 두 가지 중 하나를 선택하세요.
+     ⚠️ 다른 업체의 실제 영상을 그대로 가져다 쓰면 안 됩니다 — 반드시 본인 소유의 영상을 사용하세요. -->
 <section class="hero">
-  <div class="video-bg">
-    <iframe
-      src="https://www.youtube.com/embed/0bSrmctpkYM?autoplay=1&mute=1&loop=1&playlist=0bSrmctpkYM&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
-      title="배경 영상"
-      allow="autoplay; encrypted-media"
-      allowfullscreen>
-    </iframe>
-  </div>
+  <div class="ph" style="position:absolute; inset:0;" data-label="여기에 본인 영상/사진이 들어갑니다"></div>
   <div class="overlay"></div>
 
   <!--
-    직접 촬영한 mp4 영상 파일을 쓰고 싶다면, 위 <div class="video-bg">...</div>
-    전체를 지우고 아래 코드로 교체하세요. (video.mp4를 실제 파일명으로 변경)
+    [방법 1] 유튜브에 올린 본인 영상 사용:
+    <div class="video-bg">
+      <iframe
+        src="https://www.youtube.com/embed/여기에_본인_영상ID?autoplay=1&mute=1&loop=1&playlist=여기에_본인_영상ID&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
+        title="배경 영상" allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+    </div>
 
+    [방법 2] 직접 촬영한 mp4 파일 사용 (video.mp4를 실제 파일명으로 변경):
     <video class="video-bg" autoplay muted loop playsinline
-           style="object-fit:cover; width:100%; height:100%; top:0; left:0; transform:none;">
+           style="object-fit:cover; width:100%; height:100%; top:0; left:0; transform:none; position:absolute;">
       <source src="video.mp4" type="video/mp4">
     </video>
   -->
 </section>
 
-
+<!-- Intro -->
+<section class="intro">
+  <div class="wrap">
+    <div class="intro-figure">
+      <div class="ph" data-label="INTRO PHOTO"></div>
+      <p class="intro-note">once and forever,<br>the moments that matter most.</p>
+    </div>
+    <div class="intro-text">
+      <p>서로를 바라보는 순간, 빛나는 두 사람.</p>
+      <p>마지막 서랍에 담아두는 소중한 기억처럼<br>
+      시간이 흐른 뒤에도<br>
+      다시 꺼내보고 싶은 순간을 기록합니다.</p>
+      <p>그날의 사랑이<br>오래도록 머무를 수 있도록.</p>
+    </div>
+  </div>
+</section>
 
 <!-- Footer -->
 <footer>
@@ -168,14 +182,14 @@
     <div class="footer-top">
       <span></span>
       <span class="social">
-        <a href="https://pf.kakao.com/_xaxoxdExb" target="_blank" rel="noopener noreferrer">KAKAOTALK</a>
-        <a href="https://www.instagram.com/bottomdrawer_ian/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">KAKAOTALK</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
       </span>
     </div>
     <div class="footer-info">
-      <p>COPYRIGHT &copy; 2026 BOTTOM DRAWER. ALL RIGHTS RESERVED.</p>
-      <p>COMPANY: BOTTOM DRAWER &nbsp;&middot;&nbsp; CEO: YANG HONGSEOK &nbsp;&middot;&nbsp; BUSINESS LICENSE: 708-54-00470</p>
-      <p>ADDRESS: 402, 4F, Beomjeong Bldg, 13 Mabang-ro 6-gil, Seocho-gu, Seoul, Republic of Korea</p>
+      <p>COPYRIGHT &copy; 2026 NEWDAY FILM. ALL RIGHTS RESERVED.</p>
+      <p>COMPANY: NEWDAY FILM &nbsp;&middot;&nbsp; CEO: OOO &nbsp;&middot;&nbsp; BUSINESS LICENSE: 000-00-00000</p>
+      <p>ADDRESS: OO시 OO구 OO로 00, OO빌딩 0F</p>
     </div>
   </div>
 </footer>
