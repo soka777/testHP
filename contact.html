@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Contact — 바텀드로어</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .contact-wrap{
+    max-width:900px;
+    margin:0 auto;
+    padding:80px 32px 140px;
+    text-align:center;
+  }
+  .contact-figure .ph{
+    max-width:520px;
+    aspect-ratio:4/3;
+    margin:0 auto 70px;
+  }
+  .contact-block{ margin-bottom:56px; }
+  .contact-block h3{
+    font-family:var(--serif);
+    font-weight:400;
+    font-size:18px;
+    letter-spacing:0.08em;
+    margin-bottom:16px;
+  }
+  .contact-block p{
+    font-size:15px;
+    color:var(--ink-soft);
+    line-height:1.8;
+  }
+  .contact-block a{ text-decoration:underline; text-underline-offset:3px; }
+</style>
+</head>
+<body>
+
+<header class="site-header static-solid" id="site-header">
+  <div class="header-inner">
+    <a class="logo" href="/index.html">BOTTOM DRAWER</a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/about.html">About</a></li>
+        <li class="dropdown">
+          <a href="/films.html">Films</a>
+          <ul class="dropdown-menu">
+            <li><a href="/films.html?cat=all">All</a></li>
+            <li><a href="/films.html?cat=wedding">wedding</a></li>
+            <li><a href="/films.html?cat=pre-wedding">pre-wedding</a></li>
+            <li><a href="/films.html?cat=baby">baby</a></li>
+          </ul>
+        </li>
+        <li><a href="/product.html">Product</a></li>
+        <li><a href="/reservation.html">Reservation</a></li>
+        <li class="current"><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<header class="site-header-mobile" id="site-header-mobile">
+  <div class="header-inner">
+    <a class="logo" href="/index.html">BOTTOM DRAWER</a>
+    <button class="menu-btn" id="mobileMenuBtn" aria-label="메뉴 열기">&#9776;</button>
+  </div>
+</header>
+
+<div id="mobile-menu">
+  <button class="close-btn" id="mobileMenuClose" aria-label="닫기">&times;</button>
+  <ul>
+    <li><a href="/about.html">About</a></li>
+    <li>
+      <a href="/films.html">Films</a>
+      <ul>
+        <li><a href="/films.html?cat=all">All</a></li>
+        <li><a href="/films.html?cat=wedding">wedding</a></li>
+        <li><a href="/films.html?cat=pre-wedding">pre-wedding</a></li>
+        <li><a href="/films.html?cat=baby">baby</a></li>
+      </ul>
+    </li>
+    <li><a href="/product.html">Product</a></li>
+    <li><a href="/reservation.html">Reservation</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<div class="page-top-spacer"></div>
+
+<main class="contact-wrap">
+  <div class="contact-figure">
+    <div class="ph" data-label="PHOTO"></div>
+  </div>
+
+  <div class="contact-block">
+    <h3>ADDRESS</h3>
+    <p>402, 4F, Beomjeong Building<br>13 Mabang-ro 6-gil<br>Seocho-gu, Seoul<br>Republic of Korea</p>
+  </div>
+
+  <div class="contact-block">
+    <h3>EMAIL</h3>
+    <p><a href="mailto:iseya79@naver.com">iseya79@naver.com</a></p>
+  </div>
+
+  <div class="contact-block">
+    <h3>CONTACT</h3>
+    <p>
+      0507-1347-9927<br>
+      <a href="https://map.naver.com" target="_blank" rel="noopener noreferrer">Map</a>
+    </p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <span></span>
+      <span class="social">
+        <a href="https://pf.kakao.com/_xaxoxdExb" target="_blank" rel="noopener noreferrer">KAKAOTALK</a>
+        <a href="https://www.instagram.com/bottomdrawer_ian/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+      </span>
+    </div>
+    <div class="footer-info">
+      <p>COPYRIGHT &copy; 2026 BOTTOM DRAWER. ALL RIGHTS RESERVED.</p>
+      <p>COMPANY: BOTTOM DRAWER &nbsp;&middot;&nbsp; CEO: YANG HONGSEOK &nbsp;&middot;&nbsp; BUSINESS LICENSE: 708-54-00470</p>
+      <p>ADDRESS: 402, 4F, Beomjeong Bldg, 13 Mabang-ro 6-gil, Seocho-gu, Seoul, Republic of Korea</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

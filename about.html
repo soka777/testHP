@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>About — 바텀드로어</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .intro{ padding:100px 0 140px; }
+  .intro .wrap{
+    display:grid;
+    grid-template-columns:1.1fr 1fr;
+    gap:90px;
+    align-items:start;
+  }
+  .intro-figure{ position:relative; }
+  .intro-figure .ph{ aspect-ratio:4/3; }
+  .intro-note{
+    font-family:var(--script);
+    font-size:26px;
+    color:var(--ink-soft);
+    line-height:1.5;
+    margin-top:24px;
+    padding-left:8px;
+    transform:rotate(-1.5deg);
+  }
+  .intro-text{ padding-top:36px; }
+  .intro-text p{
+    font-family:var(--sans);
+    font-size:16px;
+    color:var(--ink);
+    margin-bottom:26px;
+  }
+  .intro-text p:first-child{ font-size:17px; }
+
+  @media (max-width:900px){
+    .intro .wrap{ grid-template-columns:1fr; gap:40px; }
+    .intro{ padding:70px 0; }
+    .intro-text{ padding-top:0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header static-solid" id="site-header">
+  <div class="header-inner">
+    <a class="logo" href="/index.html">BOTTOM DRAWER</a>
+    <nav class="main-nav">
+      <ul>
+        <li class="current"><a href="/about.html">About</a></li>
+        <li class="dropdown">
+          <a href="/films.html">Films</a>
+          <ul class="dropdown-menu">
+            <li><a href="/films.html?cat=all">All</a></li>
+            <li><a href="/films.html?cat=wedding">wedding</a></li>
+            <li><a href="/films.html?cat=pre-wedding">pre-wedding</a></li>
+            <li><a href="/films.html?cat=baby">baby</a></li>
+          </ul>
+        </li>
+        <li><a href="/product.html">Product</a></li>
+        <li><a href="/reservation.html">Reservation</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<header class="site-header-mobile" id="site-header-mobile">
+  <div class="header-inner">
+    <a class="logo" href="/index.html">BOTTOM DRAWER</a>
+    <button class="menu-btn" id="mobileMenuBtn" aria-label="메뉴 열기">&#9776;</button>
+  </div>
+</header>
+
+<div id="mobile-menu">
+  <button class="close-btn" id="mobileMenuClose" aria-label="닫기">&times;</button>
+  <ul>
+    <li><a href="/about.html">About</a></li>
+    <li>
+      <a href="/films.html">Films</a>
+      <ul>
+        <li><a href="/films.html?cat=all">All</a></li>
+        <li><a href="/films.html?cat=wedding">wedding</a></li>
+        <li><a href="/films.html?cat=pre-wedding">pre-wedding</a></li>
+        <li><a href="/films.html?cat=baby">baby</a></li>
+      </ul>
+    </li>
+    <li><a href="/product.html">Product</a></li>
+    <li><a href="/reservation.html">Reservation</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<div class="page-top-spacer"></div>
+
+<section class="intro">
+  <div class="wrap">
+    <div class="intro-figure">
+      <div class="ph" data-label="ABOUT PHOTO"></div>
+      <p class="intro-note">once and forever,<br>the moments that matter most.</p>
+    </div>
+    <div class="intro-text">
+      <p>서로를 바라보는 순간, 빛나는 두 사람.</p>
+      <p>마지막 서랍에 담아두는 소중한 기억처럼<br>
+      시간이 흐른 뒤에도<br>
+      다시 꺼내보고 싶은 순간을 기록합니다.</p>
+      <p>그날의 사랑이<br>오래도록 머무를 수 있도록.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <span></span>
+      <span class="social">
+        <a href="https://pf.kakao.com/_xaxoxdExb" target="_blank" rel="noopener noreferrer">KAKAOTALK</a>
+        <a href="https://www.instagram.com/bottomdrawer_ian/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+      </span>
+    </div>
+    <div class="footer-info">
+      <p>COPYRIGHT &copy; 2026 BOTTOM DRAWER. ALL RIGHTS RESERVED.</p>
+      <p>COMPANY: BOTTOM DRAWER &nbsp;&middot;&nbsp; CEO: YANG HONGSEOK &nbsp;&middot;&nbsp; BUSINESS LICENSE: 708-54-00470</p>
+      <p>ADDRESS: 402, 4F, Beomjeong Bldg, 13 Mabang-ro 6-gil, Seocho-gu, Seoul, Republic of Korea</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

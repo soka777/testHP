@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Reservation — 바텀드로어</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .reservation-wrap{
+    max-width:680px;
+    margin:0 auto;
+    padding:120px 32px 160px;
+    text-align:center;
+  }
+  .kakao-btn{
+    display:inline-block;
+    border:1px solid var(--ink);
+    padding:16px 40px;
+    font-size:15px;
+    letter-spacing:0.02em;
+    margin-bottom:44px;
+    transition:background-color .2s ease, color .2s ease;
+  }
+  .kakao-btn:hover{ background:var(--brand); color:#fff; border-color:var(--brand); }
+  .reservation-desc p{
+    font-size:14.5px;
+    color:var(--ink-soft);
+    margin-bottom:6px;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header static-solid" id="site-header">
+  <div class="header-inner">
+    <a class="logo" href="/index.html">BOTTOM DRAWER</a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/about.html">About</a></li>
+        <li class="dropdown">
+          <a href="/films.html">Films</a>
+          <ul class="dropdown-menu">
+            <li><a href="/films.html?cat=all">All</a></li>
+            <li><a href="/films.html?cat=wedding">wedding</a></li>
+            <li><a href="/films.html?cat=pre-wedding">pre-wedding</a></li>
+            <li><a href="/films.html?cat=baby">baby</a></li>
+          </ul>
+        </li>
+        <li><a href="/product.html">Product</a></li>
+        <li class="current"><a href="/reservation.html">Reservation</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<header class="site-header-mobile" id="site-header-mobile">
+  <div class="header-inner">
+    <a class="logo" href="/index.html">BOTTOM DRAWER</a>
+    <button class="menu-btn" id="mobileMenuBtn" aria-label="메뉴 열기">&#9776;</button>
+  </div>
+</header>
+
+<div id="mobile-menu">
+  <button class="close-btn" id="mobileMenuClose" aria-label="닫기">&times;</button>
+  <ul>
+    <li><a href="/about.html">About</a></li>
+    <li>
+      <a href="/films.html">Films</a>
+      <ul>
+        <li><a href="/films.html?cat=all">All</a></li>
+        <li><a href="/films.html?cat=wedding">wedding</a></li>
+        <li><a href="/films.html?cat=pre-wedding">pre-wedding</a></li>
+        <li><a href="/films.html?cat=baby">baby</a></li>
+      </ul>
+    </li>
+    <li><a href="/product.html">Product</a></li>
+    <li><a href="/reservation.html">Reservation</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<div class="page-top-spacer"></div>
+
+<main class="reservation-wrap">
+  <a class="kakao-btn" href="https://pf.kakao.com/_xaxoxdExb" target="_blank" rel="noopener noreferrer">
+    카카오톡 채널 상담 및 예약 문의
+  </a>
+  <div class="reservation-desc">
+    <p>모든 상담 및 예약 문의는 카카오톡 채널을 통해 진행됩니다.</p>
+    <p>상단 버튼을 클릭하시면 채팅창으로 연결됩니다.</p>
+    <p>계약은 충분한 상담 후 개별 안내를 통해 진행됩니다.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <span></span>
+      <span class="social">
+        <a href="https://pf.kakao.com/_xaxoxdExb" target="_blank" rel="noopener noreferrer">KAKAOTALK</a>
+        <a href="https://www.instagram.com/bottomdrawer_ian/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+      </span>
+    </div>
+    <div class="footer-info">
+      <p>COPYRIGHT &copy; 2026 BOTTOM DRAWER. ALL RIGHTS RESERVED.</p>
+      <p>COMPANY: BOTTOM DRAWER &nbsp;&middot;&nbsp; CEO: YANG HONGSEOK &nbsp;&middot;&nbsp; BUSINESS LICENSE: 708-54-00470</p>
+      <p>ADDRESS: 402, 4F, Beomjeong Bldg, 13 Mabang-ro 6-gil, Seocho-gu, Seoul, Republic of Korea</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

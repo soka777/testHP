@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Product — 바텀드로어</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .product-title{
+    font-family:var(--sans);
+    font-size:15px;
+    letter-spacing:0.06em;
+    padding-bottom:14px;
+    border-bottom:1px solid var(--ink);
+    margin-bottom:20px;
+  }
+
+  .category-group{
+    display:flex;
+    gap:40px;
+    border-top:1px solid var(--line);
+    padding:26px 0;
+  }
+  .category-group:last-of-type{ border-bottom:1px solid var(--line); }
+  .category-label{
+    flex:0 0 100px;
+    font-size:15px;
+    color:var(--ink);
+    padding-top:4px;
+  }
+  .category-items{ flex:1; }
+
+  .item-row{
+    padding:14px 0;
+    border-top:1px solid var(--line);
+  }
+  .item-row:first-child{ border-top:none; padding-top:0; }
+  .item-main{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:20px;
+  }
+  .item-name{
+    font-family:var(--serif);
+    font-size:18px;
+  }
+  .item-price{
+    font-size:15px;
+    white-space:nowrap;
+    color:var(--ink);
+  }
+  .item-desc{
+    font-size:13.5px;
+    color:var(--ink-soft);
+    margin-top:8px;
+    line-height:1.7;
+  }
+
+  @media (max-width:640px){
+    .category-group{ flex-direction:column; gap:10px; }
+    .category-label{ flex:none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header static-solid" id="site-header">
+  <div class="header-inner">
+    <a class="logo" href="/index.html">BOTTOM DRAWER</a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/about.html">About</a></li>
+        <li class="dropdown">
+          <a href="/films.html">Films</a>
+          <ul class="dropdown-menu">
+            <li><a href="/films.html?cat=all">All</a></li>
+            <li><a href="/films.html?cat=wedding">wedding</a></li>
+            <li><a href="/films.html?cat=pre-wedding">pre-wedding</a></li>
+            <li><a href="/films.html?cat=baby">baby</a></li>
+          </ul>
+        </li>
+        <li class="current"><a href="/product.html">Product</a></li>
+        <li><a href="/reservation.html">Reservation</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<header class="site-header-mobile" id="site-header-mobile">
+  <div class="header-inner">
+    <a class="logo" href="/index.html">BOTTOM DRAWER</a>
+    <button class="menu-btn" id="mobileMenuBtn" aria-label="메뉴 열기">&#9776;</button>
+  </div>
+</header>
+
+<div id="mobile-menu">
+  <button class="close-btn" id="mobileMenuClose" aria-label="닫기">&times;</button>
+  <ul>
+    <li><a href="/about.html">About</a></li>
+    <li>
+      <a href="/films.html">Films</a>
+      <ul>
+        <li><a href="/films.html?cat=all">All</a></li>
+        <li><a href="/films.html?cat=wedding">wedding</a></li>
+        <li><a href="/films.html?cat=pre-wedding">pre-wedding</a></li>
+        <li><a href="/films.html?cat=baby">baby</a></li>
+      </ul>
+    </li>
+    <li><a href="/product.html">Product</a></li>
+    <li><a href="/reservation.html">Reservation</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<div class="page-top-spacer"></div>
+
+<main class="wrap" style="padding:60px 32px 120px; max-width:1200px;">
+  <div class="product-title">PRODUCT</div>
+
+  <!-- 촬영 -->
+  <div class="category-group">
+    <div class="category-label">촬영</div>
+    <div class="category-items">
+      <div class="item-row">
+        <div class="item-main"><span class="item-name">본식 1인 2캠</span><span class="item-price">110만원</span></div>
+        <p class="item-desc">신부대기실 - 본식 - 식후 - 에피소드<br>1인 촬영으로 신부입장 슬로우효과 가능합니다.</p>
+      </div>
+      <div class="item-row">
+        <div class="item-main"><span class="item-name">본식 2인 3캠</span><span class="item-price">170만원</span></div>
+        <p class="item-desc">신부대기실 - 본식 - 식후 - 에피소드<br>2인 촬영은 신부대기실과 하객맞이를 나누어 담아<br>신랑, 신부님과 부모님의 모습을 풍부하게 기록할 수 있습니다.</p>
+      </div>
+      <div class="item-row">
+        <div class="item-main"><span class="item-name">프리웨딩&amp;본식 패키지 A</span><span class="item-price">170만원</span></div>
+        <p class="item-desc">프리웨딩 + 본식 1인 2캠</p>
+      </div>
+      <div class="item-row">
+        <div class="item-main"><span class="item-name">프리웨딩&amp;본식 패키지 B</span><span class="item-price">230만원</span></div>
+        <p class="item-desc">프리웨딩 + 본식 2인 3캠</p>
+      </div>
+      <div class="item-row">
+        <div class="item-main"><span class="item-name">프리웨딩 1인 2캠</span><span class="item-price">70만원</span></div>
+        <p class="item-desc">스튜디오나 가봉 촬영 시 동행하여 프리웨딩 영상 제작<br>스튜디오 - 3시간 촬영 / 가봉 - 2시간 촬영</p>
+      </div>
+      <div class="item-row">
+        <div class="item-main"><span class="item-name">돌잔치 1인 2캠</span><span class="item-price">70만원</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 옵션 -->
+  <div class="category-group">
+    <div class="category-label">옵션</div>
+    <div class="category-items">
+      <div class="item-row"><div class="item-main"><span class="item-name">대표지정</span><span class="item-price">30만원</span></div></div>
+      <div class="item-row"><div class="item-main"><span class="item-name">실장지정</span><span class="item-price">15만원</span></div></div>
+      <div class="item-row"><div class="item-main"><span class="item-name">메이크업 추가</span><span class="item-price">20만원</span></div></div>
+      <div class="item-row"><div class="item-main"><span class="item-name">폐백추가</span><span class="item-price">20만원</span></div></div>
+      <div class="item-row"><div class="item-main"><span class="item-name">본식 4K 업그레이드</span><span class="item-price">20만원</span></div></div>
+      <div class="item-row"><div class="item-main"><span class="item-name">프리웨딩, 돌잔치 4K 업그레이드</span><span class="item-price">10만원</span></div></div>
+      <div class="item-row">
+        <div class="item-main"><span class="item-name">드론 촬영</span><span class="item-price">50만원</span></div>
+        <p class="item-desc">2인 촬영부터 가능</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <span></span>
+      <span class="social">
+        <a href="https://pf.kakao.com/_xaxoxdExb" target="_blank" rel="noopener noreferrer">KAKAOTALK</a>
+        <a href="https://www.instagram.com/bottomdrawer_ian/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+      </span>
+    </div>
+    <div class="footer-info">
+      <p>COPYRIGHT &copy; 2026 BOTTOM DRAWER. ALL RIGHTS RESERVED.</p>
+      <p>COMPANY: BOTTOM DRAWER &nbsp;&middot;&nbsp; CEO: YANG HONGSEOK &nbsp;&middot;&nbsp; BUSINESS LICENSE: 708-54-00470</p>
+      <p>ADDRESS: 402, 4F, Beomjeong Bldg, 13 Mabang-ro 6-gil, Seocho-gu, Seoul, Republic of Korea</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
